@@ -451,7 +451,7 @@ Launch browser and go to `http://<YOUR-SERVER-GLOBAL-IP>:3000/`
 <img width="1680" alt="grafana-12" src="https://github.com/qyeah98/voi/assets/99518712/5be3761c-b4fa-4b7a-aa8a-9ccd048dbe48">
 
 ## Click Upload JSON file
-Please download the [0G grafana json file](https://github.com/qyeah98/0g/blob/main/grafana/0g-node.json) and upload.
+Please download the [0G grafana json file](https://github.com/qyeah98/0g/blob/main/0g_validator.json) and upload.
 <img width="1680" alt="grafana-13" src="https://github.com/qyeah98/0g/assets/99518712/14058942-98e1-432b-8ac4-ce6bc79dd3c9">
 
 ## Select prometheus datasource
