@@ -451,15 +451,15 @@ Launch browser and go to `http://<YOUR-SERVER-GLOBAL-IP>:3000/`
 <img width="1680" alt="grafana-12" src="https://github.com/qyeah98/voi/assets/99518712/5be3761c-b4fa-4b7a-aa8a-9ccd048dbe48">
 
 ## Click Upload JSON file
-Please download the [0G grafana json file](https://github.com/qyeah98/0g/blob/main/grafana/0g-node.json) and upload it.
-<img width="1680" alt="grafana-13" src="https://github.com/qyeah98/voi/assets/99518712/45d6e169-4fba-4468-b2de-b6b523312fbb">
+Please download the [0G grafana json file](https://github.com/qyeah98/0g/blob/main/grafana/0g-node.json) and upload.
+<img width="1680" alt="grafana-13" src="https://github.com/qyeah98/0g/assets/99518712/14058942-98e1-432b-8ac4-ce6bc79dd3c9">
 
 ## Select prometheus datasource
-<img width="1680" alt="grafana-15" src="https://github.com/qyeah98/voi/assets/99518712/877795fb-ef44-4c65-a510-379db89c5734">
-<img width="1680" alt="grafana-16" src="https://github.com/qyeah98/voi/assets/99518712/be5cfd78-46f2-4935-bbe8-cd5b37e1a06e">
+<img width="1680" alt="grafana-15" src="https://github.com/qyeah98/0g/assets/99518712/ca8ad1ae-cda4-4be2-95cb-f3915bc76a2d">
+<img width="1680" alt="grafana-16" src="https://github.com/qyeah98/0g/assets/99518712/ccdc8104-385c-4313-b6ef-c37db82aa870">
 
 ## Complete
-<img width="1680" alt="grafana-17" src="https://github.com/qyeah98/voi/assets/99518712/2714276f-54e9-43cf-bdcd-b4a79dda0c5a">
+<img width="1680" alt="grafana-17" src="https://github.com/qyeah98/0g/assets/99518712/80b43e4f-35f8-414e-b56f-cef27244e02c">
 
 # (Optional) Set up notification system: Grafana + PagerDuty
 > [!TIP]
@@ -512,7 +512,7 @@ Please download the [0G grafana json file](https://github.com/qyeah98/0g/blob/ma
 Launch browser and go to `http://<YOUR-SERVER-GLOBAL-IP>:3000/`
 
 ### Go to Alerting > Contact point
-<img width="1680" alt="pagerduty-10" src="https://github.com/qyeah98/voi/assets/99518712/28e245e2-48b3-499f-802f-2fb0da8481f6">
+<img width="1680" alt="pagerduty-10" src="https://github.com/qyeah98/0g/assets/99518712/c10e52ce-c2a0-4b61-ad90-a329eca8a9f0">
 <img width="1680" alt="pagerduty-11" src="https://github.com/qyeah98/voi/assets/99518712/03dff62c-eefa-4250-aa97-13f4fc94bcd2">
 
 
@@ -536,7 +536,7 @@ Launch browser and go to `http://<YOUR-SERVER-GLOBAL-IP>:3000/`
 
 ### Go to 0G Node Dashboard
 <img width="1680" alt="pagerduty-17" src="https://github.com/qyeah98/voi/assets/99518712/f06919c3-8979-4616-b75b-fd66c8de3e0e">
-<img width="1680" alt="pagerduty-18" src="https://github.com/qyeah98/voi/assets/99518712/55fad085-ad66-47a1-8242-449fc637934e">
+<img width="1680" alt="pagerduty-18" src="https://github.com/qyeah98/0g/assets/99518712/28ebd136-6991-4a5b-8eb3-6e8af2cda373">
 
 ### Creating Alert Rule
 > [!TIP]
@@ -546,23 +546,23 @@ Launch browser and go to `http://<YOUR-SERVER-GLOBAL-IP>:3000/`
 
 > [!IMPORTANT]
 > What metrics you choose is the most important thing to monitoring your node.  
-> This guide is monitoring `Total Peers` metrics to notify when `peer is 0`.  
-> I don't have best procatice, so let's discuss.  
-<img width="1680" alt="pagerduty-19" src="https://github.com/qyeah98/voi/assets/99518712/55258da1-c7e1-4c1b-9311-0da841ecfcec">
-<img width="1680" alt="pagerduty-20" src="https://github.com/qyeah98/voi/assets/99518712/92d96bc6-a1bf-421a-9fe4-5fc34f4d6e53">
-<img width="1680" alt="pagerduty-21" src="https://github.com/qyeah98/voi/assets/99518712/34712553-bf14-40cd-a691-b982106d05e0">
-<img width="1680" alt="pagerduty-22" src="https://github.com/qyeah98/voi/assets/99518712/b40544c0-db19-4681-9f63-2b0201e4e7e4">
-<img width="1680" alt="pagerduty-23" src="https://github.com/qyeah98/voi/assets/99518712/416868fb-365e-4980-814c-ba1fbebd9bf3">
-<img width="1680" alt="pagerduty-24" src="https://github.com/qyeah98/voi/assets/99518712/c1e144d6-4756-4e82-9885-72ce5ff85308">
-<img width="1680" alt="pagerduty-25" src="https://github.com/qyeah98/voi/assets/99518712/eef8e7c8-1c52-4563-bdff-135cc484d0a2">
-<img width="1680" alt="pagerduty-26" src="https://github.com/qyeah98/voi/assets/99518712/d27af341-de09-4787-82fd-9e8798bc8e20">
-<img width="1680" alt="pagerduty-27" src="https://github.com/qyeah98/voi/assets/99518712/34fd8296-0af5-4ffc-8d8a-5e2f1b21675b">
-<img width="1680" alt="pagerduty-28" src="https://github.com/qyeah98/voi/assets/99518712/1d225b95-436a-4004-a24e-71e9ac87e348">
+> This guide is monitoring `Block Size` metrics to notify when `< 1 Bytes/Sec`.  
+> You will get notification when 0G network down.
+<img width="1680" alt="pagerduty-20" src="https://github.com/qyeah98/0g/assets/99518712/8b52c138-c24d-4f25-a044-aa96878a8293">
+<img width="1680" alt="pagerduty-21" src="https://github.com/qyeah98/0g/assets/99518712/8ff464a2-375f-482a-91a0-97f95c52915e">
+<img width="1680" alt="pagerduty-22" src="https://github.com/qyeah98/0g/assets/99518712/6e953001-820b-46d6-b177-56eca7d03efb">
+<img width="1680" alt="pagerduty-23" src="https://github.com/qyeah98/0g/assets/99518712/0ed43592-1ebf-4772-90b7-8fd6821ff527">
+<img width="1680" alt="pagerduty-24" src="https://github.com/qyeah98/0g/assets/99518712/d253e951-5b4a-4462-b3de-7eef757fa16f">
+<img width="1680" alt="pagerduty-25" src="https://github.com/qyeah98/0g/assets/99518712/50b3513b-ee67-4491-b5e0-259f330ae0f0">
+<img width="1680" alt="pagerduty-26" src="https://github.com/qyeah98/0g/assets/99518712/622f95b9-2b1c-40e7-b359-ee6ac2118c3a">
+<img width="1680" alt="pagerduty-27" src="https://github.com/qyeah98/0g/assets/99518712/62e7e41d-f89e-40bb-9e99-ea59ab6db2bd">
+<img width="1680" alt="pagerduty-28" src="https://github.com/qyeah98/0g/assets/99518712/0113e965-746e-4266-aa8c-557d36f19573">
+<img width="1680" alt="pagerduty-29" src="https://github.com/qyeah98/0g/assets/99518712/0bef9ffb-58e6-4c00-b570-07697844a2bb">
 
 ### Complete
 > [!TIP]
 > You can find alerting status at Dashboard.
-<img width="1680" alt="pagerduty-29" src="https://github.com/qyeah98/voi/assets/99518712/7602b9b4-67c2-4954-bc9c-48f0b3861d64">
+<img width="1680" alt="pagerduty-30" src="https://github.com/qyeah98/0g/assets/99518712/e5590c40-fd27-41ed-a655-c2b92a243ee0">
 
 > [!IMPORTANT]
 > To Keep network healhy, it is the important to detect aberrations in node metrics as soon as possible.  
