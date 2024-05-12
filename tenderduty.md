@@ -22,10 +22,10 @@
 > Tenderduty is a comprehensive monitoring tool for Tendermint networks.  
 > Its main function is to alert a validator if it is missing blocks, and it has many other features.  
 > V2 adds a web dashboard, a prometheus exporter, pagerduty and discord notifications, multi-chain support, more granular alerts and more alert types.  
-> [Github Tenderduty](https://github.com/blockpane/tenderduty
+> [Github Tenderduty](https://github.com/blockpane/tenderduty)
 
 > [!CAUTION]
-> This guide is supported for the 0G validator by following the [Moderator Daniel Moon guide](https://github.com/trusted-point/0g-tools) guide.  
+> This guide is supported for the 0G validator by following the [Moderator Daniel Moon guide](https://github.com/trusted-point/0g-tools).  
 > Support OS is `Ubuntu22.04 LTS`.
 
 
@@ -76,9 +76,9 @@ nano $HOME/tenderduty/config.yml
 
 For simple monitoring, just change these in the config:
 - Set project name : `0G`
-- `chain_id: zgtendermint_9000-1`
+- `chain_id: zgtendermint_16600-1`
 - `valoper_address: <YOUR_VALOPER_ADDRESS>`   
-  You can check your node valoper address by using `evmosd keys show <YOUR_WALLET_NAME> --bech val -a`
+  You can check your node valoper address by using `0gchaind keys show <YOUR_WALLET_NAME> --bech val -a`
 - `url: https://rpc-testnet.0g.ai:443`
 - `Discord enabled: yes`
 - `Discord webhook: <YOUR_DOSCORD_WEBHOOK>`  
@@ -152,7 +152,7 @@ chains:
   # The user-friendly name that will be used for labels. Highly suggest wrapping in quotes.
   "0G":
     # chain_id is validated for a match when connecting to an RPC endpoint, also used as a label in several places.
-    chain_id: zgtendermint_9000-1
+    chain_id: zgtendermint_16600-1
     # Hooray, in v2 we derive the valcons from abci queries so you don't have to jump through hoops to figure out how
     # to convert ed25519 keys to the appropriate bech32 address.
     # Use valcons address if using ICS
@@ -299,7 +299,7 @@ sudo journalctl -fu tenderdutyd
 May 01 23:30:42 0g-validator-newton tenderduty[530387]: 2024/05/01 23:30:42 tenderduty |  🟢 0G     node https://rpc-testnet.0g.ai:443 is healthy
 May 01 23:31:42 0g-validator-newton tenderduty[530387]: 2024/05/01 23:31:42 tenderduty |  🟢 0G     node tcp://localhost:26657 is healthy
 May 01 23:31:42 0g-validator-newton tenderduty[530387]: 2024/05/01 23:31:42 tenderduty |  🟢 0G     node https://rpc-testnet.0g.ai:443 is healthy
-May 01 23:32:09 0g-validator-newton tenderduty[530387]: 2024/05/01 23:32:09 tenderduty |  🧊 zgtendermint_9000-1      block 836770
+May 01 23:32:09 0g-validator-newton tenderduty[530387]: 2024/05/01 23:32:09 tenderduty |  🧊 zgtendermint_16600-1      block 836770
 May 01 23:32:42 0g-validator-newton tenderduty[530387]: 2024/05/01 23:32:42 tenderduty |  🟢 0G     node tcp://localhost:26657 is healthy
 May 01 23:32:42 0g-validator-newton tenderduty[530387]: 2024/05/01 23:32:42 tenderduty |  🟢 0G     node https://rpc-testnet.0g.ai:443 is healthy
 May 01 23:33:42 0g-validator-newton tenderduty[530387]: 2024/05/01 23:33:42 tenderduty |  🟢 0G     node tcp://localhost:26657 is healthy
