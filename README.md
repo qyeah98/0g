@@ -6,19 +6,18 @@ The First Modular AI Chain
 # Hardware Requirement [^1]
 [^1]: [0G Docs Run Node Validator Node](https://docs.0g.ai/0g-doc/run-a-node/validator-node)
 
-- CPU : 4 vCPU
-- RAM : 8 GB
-- Storage : 500 GB NVMe SSD
+- CPU : 8 cores
+- RAM : 64 GB
+- Storage : 1000 GB NVMe SSD
 - Network : 100mbps Gbps for Download / Upload
 
 > [!TIP]
-> `CPU`, `Network` and `Disk I/O` become a potential bottleneck during High TPS.
+> `CPU`, `Network` and `Disk I/O` become a potential bottleneck during High TPS.  
 > If could, it is better to choose higher spec server than requirement.
 
 
 # Install 0G Validator node
-Currently in production.  
-Please use [Moderator Daniel Moon guide](https://github.com/trusted-point/0g-tools) as a reference.
+Please follow [0G Moderator Daniel Moon guide](https://github.com/trusted-point/0g-tools).
 
 
 # Set up monitoring system: Prometheus + Grafana
@@ -33,13 +32,13 @@ Please use [Moderator Daniel Moon guide](https://github.com/trusted-point/0g-too
 > The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus and Loki.
 
 > [!CAUTION]
-> This guide is supported for the node by following the [Moderator Daniel Moon guide](https://github.com/trusted-point/0g-tools) guide.  
+> This guide is supported for the node by following the [Moderator Daniel Moon guide](https://github.com/trusted-point/0g-tools).  
 > Support OS is `Ubuntu22.04 LTS`.
 
 ## Stop 0G validator node
 Run this command:
 ``` bash
-sudo systemctl stop ogd
+sudo systemctl stop 0gd
 ```
 
 
@@ -52,18 +51,18 @@ Run this command:
 GRPC_PORT=19090
 
 sudo sed -i \
-    -e "/\[grpc\]/,/^\[/{s/\(address = \"\)\([^:]*\):\([0-9]*\)\(\".*\)/\1\2:$GRPC_PORT\4/}" $HOME/.evmosd/config/app.toml
+    -e "/\[grpc\]/,/^\[/{s/\(address = \"\)\([^:]*\):\([0-9]*\)\(\".*\)/\1\2:$GRPC_PORT\4/}" $HOME/.0g-chain/config/app.toml
 ```
 
 ## Enable Prometheus
 Run this command:
 ``` bash
-sudo sed -i "s/^prometheus *=.*/prometheus = true/" $HOME/.evmosd/config/config.toml
+sudo sed -i "s/^prometheus *=.*/prometheus = true/" $HOME/.0g-chain/config/config.toml
 ```
 
 Check if `prometheus` is `true`:
 ``` bash
-sudo grep prometheus $HOME/.evmosd/config/config.toml
+sudo grep prometheus $HOME/.0g-chain/config/config.toml
 ```
 
 **----- Result -----**
@@ -76,7 +75,7 @@ prometheus_listen_addr = ":26660"
 ## Start 0G validator node
 Run this command:
 ``` bash
-sudo systemctl start ogd
+sudo systemctl start 0gd
 ```
 
 
